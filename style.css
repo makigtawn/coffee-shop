@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b0f18;
+    color: white;
+    font-family: 'Montserrat', 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
+
+i {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+
+
+}
+
+.navbar {
+    justify-content: flex-end;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    gap: 2rem;
+    color: white;
+    background-color: none;
+    font-family: sans-serif;
+}
+
+.navbar ul li :hover {
+    color: #FF6B3B;
+
+
+}
+
+
+.best-coffee {
+    font-family: "Playwrite IN Guides", cursive;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+    color: #FF6B3B;
+    margin-top: 2rem;
+
+}
+
+.image {
+    max-width: 500px;
+    height: auto;
+}
+
+button {
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    border-style: groove;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #FF6B3B;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50%;
+
+}
+
+
+button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+button:hover {
+    transform: translateX(0.1rem);
+}
+
+.button1:hover {
+    background-color: #3b0f18;
+}
+
+.button2 {
+    background-color: #3b0f18;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width:768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 20p;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+
+    .header {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media(max-width:450px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 20p;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+}
